@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Points list
+   ========================================================================== */
+
+.c-points-list {
+    @include helper--list;
+
+    display: grid;
+
+    grid-column-gap: 123px;
+    grid-template-columns: repeat(3, 1fr);
+}

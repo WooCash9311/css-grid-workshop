@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Points
+   ========================================================================== */
+
+.c-points {
+    position: relative;
+    z-index: 1;
+
+    font-weight: 700;
+
+    color: $color-brand-5;
+}
+
+// Small
+.c-points--small {
+    font-size: 24px;
+}
+.c-points--small .c-points__label {
+    font-size: 10px;
+}
+
+// Big
+.c-points--big {
+    font-size: 53px;
+}
+
+// Large
+.c-points--large {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 12px;
+
+    font-size: 120px;
+    font-weight: 500;
+    line-height: .75;
+
+    color: $color-white;
+
+    align-items: flex-end;
+}
+
+.c-points--large .c-points__label {
+    display: block;
+
+    font-size: 60px;
+}

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+
+.o-logo-wrapper {
+    display: flex;
+    overflow: hidden;
+
+    width: $size-logo-wrapper;
+    height: $size-logo-wrapper;
+
+    border-radius: 100%;
+    background-color: $color-brand-2;
+
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-logo {
+    width: 1em;
+    height: 1em;
+
+    font-size: $size-logo;
+
+    fill: $color-white;
+}

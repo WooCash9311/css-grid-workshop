@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Helper mixins
+   ========================================================================== */
+
+@mixin helper--inner () {
+    @include media('<desktop-small') {
+        padding-right: $size-gutter;
+        padding-left: $size-gutter;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: $size-inner;
+    margin: 0 auto;
+
+    vertical-align: baseline;
+}
+
+@mixin helper--transition ($duration: 170ms, $timing: ease) {
+    transition-timing-function: $timing;
+    transition-duration: $duration;
+}
+
+@mixin helper--box-shadow ($color: rgba(0, 0, 0, .18)) {
+    box-shadow: 0 0 7px $color;
+}
+
+@mixin helper--box-shadow--on-hover ($color: rgba(0, 0, 0, .3)) {
+    box-shadow: 0 0 13px $color;
+}
+
+@mixin helper--list () {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+// Heading
+@mixin heading-1() {
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@mixin heading-2() {
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $color-white;
+}
+
+
+@mixin heading-3() {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@mixin heading-4() {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+
+    color: $color-white;
+}

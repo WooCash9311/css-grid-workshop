@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Index of scss files
+   ========================================================================== */
+
+/* Normalize
+   ========================================================================== */
+@import "node_modules/normalize.css/normalize";
+
+/* Breakpoint
+   ========================================================================== */
+@import "node_modules/include-media/dist/_include-media";
+
+/* Base
+   ========================================================================== */
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/helper-mixins";
+@import "base/logo";
+@import "base/icons";
+@import "base/text-styles";
+@import "base/typography";
+
+/* Components
+   ========================================================================== */
+@import "components/box";
+@import "components/buttons";
+@import "components/copyright";
+@import "components/choosen-gifts-list";
+@import "components/links";
+@import "components/info-box";
+@import "components/numbered-list";
+@import "components/most-popular-list";
+@import "components/vertical-list";
+@import "components/intro";
+@import "components/points";
+@import "components/points-box";
+@import "components/points-list";
+@import "components/sponsors-list";
+@import "components/tabs";
+@import "components/total-points";
+
+/* Components - examples
+   ========================================================================== */
+@import "components/01-example"; // Introduce to Grid
+@import "components/02-example"; // Grid cell placement
+@import "components/03-example"; // Line name based placement
+@import "components/04-example"; // Grid Template Areas
+@import "components/05-example"; // Grid instead of Bootstrap
+@import "components/06-example"; // Align and justify
+
+/* Layouts and main layout elements
+   ========================================================================== */
+@import "layout/common";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/inner";
+@import "layout/main";
+@import "layout/sections";

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Colors
+========================================================================== */
+
+$color-white: #fff;
+$color-gray: #F2F2F2;
+$color-gray-2: #E6E6E6;
+$color-gray-3: #6E6E6E;
+
+$color-brand-1: #151515;
+$color-brand-2: #E34A4A;
+$color-brand-3: #DD8686;
+$color-brand-4: #D85D5D;
+$color-brand-5: #B9141F;
+
+/* Sizes
+========================================================================== */
+$size-inner: 1240px;
+$size-gutter: 20px;
+
+// Logo
+$size-logo-wrapper: 100px;
+$size-logo: 64px;
+
+// Btn next
+$size-btn-next-width: 538px;
+$size-btn-next-height: 276px;
+
+/* Breakpoints
+========================================================================== */
+
+// breakpoints names used for include-media breakpoint and for gridle
+$breakpoint-desktop-small: 'desktop-small';
+$breakpoint-tablet: 'tablet';
+$breakpoint-phone: 'phone';
+
+// breakpoints values used for include media and for grid gridle
+$size-desktop-small: $size-inner + $size-gutter*4;
+$size-tablet: 1024px;
+$size-phone: 767px;
+
+// breakpoints names array - used to generate custom attributes with include-media rwd
+$breakpoints-array:
+    $breakpoint-desktop-small,
+    $breakpoint-tablet,
+    $breakpoint-phone;
+
+// breakpoints values array - used to generate custom attributes with include-media rwd and for include-media itself
+$breakpoints: (
+    $breakpoint-desktop-small: $size-desktop-small,
+    $breakpoint-tablet: $size-tablet,
+    $breakpoint-phone: $size-phone
+);
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
+) !default;

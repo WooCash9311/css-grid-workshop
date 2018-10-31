@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Intro
+   ========================================================================== */
+
+.c-intro {
+    @include helper--box-shadow;
+
+    position: relative;
+
+    display: grid;
+
+    margin-top: -80px;
+    padding: 40px;
+
+    background-color: $color-white;
+
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.c-intro__header {
+    margin: 0;
+    margin-bottom: 45px;
+
+    font-size: 26px;
+    font-weight: 500;
+
+    grid-column: 1 / 5;
+}
+
+.c-intro__main {
+    position: relative;
+
+    grid-column: 1 / 4;
+    grid-row-start: 2;
+}
+
+.c-intro__header > .c-mark {
+    text-transform: uppercase;
+
+    color: $color-brand-4;
+}
+
+.c-intro__main__info {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+
+    font-size: 39px;
+    font-weight: 500;
+
+    text-align: center;
+}
+
+.c-intro__more {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+}

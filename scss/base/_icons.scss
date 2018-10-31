@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+
+.o-icon {
+    display: inline-flex;
+
+    width: 1em;
+    height: 1em;
+
+    flex-shrink: 0;
+    svg {
+        fill: currentColor;
+    }
+}
+
+.o-icon--arrow-forward-right {
+    width: 1.36em;
+
+    font-size: 19px;
+}
+
+.c-icon-wrapper {
+    @include helper--transition;
+
+    display: flex;
+
+    line-height: 1;
+}

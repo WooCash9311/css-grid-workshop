@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Common
+   ========================================================================== */
+
+body {
+    font-family: 'space_grotesk', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+    color: $color-brand-1;
+}
+
+.l-wrapper {
+    padding: 30px;
+
+    border: 2px dashed rgba($color-brand-1, .2);
+    background-color: rgba($color-white, .4);
+}
+
+.example-04 .c-wrapper-box > * {
+    padding: 30px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    border-radius: 20px;
+    background: $color-brand-2;
+}
+
+.example-05 {
+    .l-header {
+        padding: 1em;
+
+        border-bottom: 1px dotted #999;
+        background-color: $color-white;
+    }
+
+    .l-aside {
+        padding: 1em;
+
+        color: $color-white;
+        background-color: rgba($color-brand-1, .7);
+        a:not([class]) {
+            transition: 250ms ease-in-out;
+
+            color: currentColor;
+        }
+        a:not([class]):hover {
+            text-decoration: none;
+
+            color: $color-brand-2;
+        }
+        ol {
+            margin: 0;
+            padding: 0 0 0 10px;
+
+            list-style: none;
+
+            counter-reset: li-counter;
+        }
+
+        li {
+            counter-increment: li-counter;
+        }
+
+        li a {
+            position: relative;
+
+            display: block;
+
+            padding-left: 30px;
+        }
+        li a:before {
+            position: absolute;
+            top: 2px;
+            left: 0;
+
+            display: inline-block;
+
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1;
+
+            content: '0' counter(li-counter);
+        }
+
+        li:nth-child(n + 10) a:before {
+            content: counter(li-counter);
+        }
+    }
+
+    .l-footer {
+        background-color: $color-brand-2;
+        padding: 1em;
+    }
+}

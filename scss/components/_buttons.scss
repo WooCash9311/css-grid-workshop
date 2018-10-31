@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.c-btn--next {
+    display: flex;
+
+    width: $size-btn-next-width;
+    height: $size-btn-next-height;
+    padding-bottom: 50px;
+    padding-left: 125px;
+
+    background-color: $color-brand-2;
+
+    align-items: flex-end;
+}
+
+.c-btn--next .o-icon--arrow {
+    @include helper--transition;
+
+    width: 1.37em;
+
+    font-size: 27px;
+
+    color: $color-white;
+}
+
+.c-btn--next:hover .o-icon--arrow {
+    transform: translateX(10px);
+}

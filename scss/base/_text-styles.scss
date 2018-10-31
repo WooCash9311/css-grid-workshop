@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Text styles
+   ========================================================================== */
+
+// Align
+.t-center {
+	text-align: center;
+}
+
+// Headings
+.t-heading-1 {
+    @include heading-1;
+}
+
+.t-heading-2 {
+    @include heading-2;
+}
+
+.t-heading-3 {
+    @include heading-3;
+}
+
+.t-heading-4 {
+    @include heading-4;
+}

@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+
+/* Global texts
+========================================================================== */
+html {
+    @include font-smoothing(on);
+    @include media('<=phone') {
+        font-size: 14px;
+    }
+
+    font-size: 16px;
+}
+
+body {
+    line-height: 1.2;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+    color: currentColor;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:not([class]) {
+        @include helper--transition;
+
+        color: $color-brand-1;
+        &:hover {
+            text-decoration: underline;
+
+            color: $color-brand-2;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    &:not([class]) + &:not([class]) {
+        margin-top: 25px;
+    }
+}
+
+@include media('<=phone') {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol {
+        &:not([class]) + &:not([class]) {
+            margin-top: 15px;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+ul,
+ol {
+    @include helper--list;
+
+    padding-left: $size-gutter;
+    &:not([class]) {
+        padding-left: $size-gutter;
+        li + li {
+            margin-top: $size-gutter/2;
+        }
+    }
+}
+
+ul {
+    text-align: left;
+    &:not([class]) {
+        list-style-type: disc;
+    }
+}
+
+ol {
+    &:not([class]) {
+        list-style-type: decimal;
+    }
+}

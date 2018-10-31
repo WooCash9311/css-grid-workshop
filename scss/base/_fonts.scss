@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'space_grotesk';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url('../fonts/spacegrotesk-semibold-webfont.eot');
+    src: url('../fonts/spacegrotesk-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/spacegrotesk-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/spacegrotesk-semibold-webfont.woff') format('woff'),
+    url('../fonts/spacegrotesk-semibold-webfont.svg#space_grotesksemibold') format('svg');
+}
+
+@font-face {
+    font-family: 'space_grotesk';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/spacegrotesk-regular-webfont.eot');
+    src: url('../fonts/spacegrotesk-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/spacegrotesk-regular-webfont.woff2') format('woff2'),
+    url('../fonts/spacegrotesk-regular-webfont.woff') format('woff'),
+    url('../fonts/spacegrotesk-regular-webfont.svg#space_groteskregular') format('svg');
+}
+
+@font-face {
+    font-family: 'space_grotesk';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/spacegrotesk-medium-webfont.eot');
+    src: url('../fonts/spacegrotesk-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/spacegrotesk-medium-webfont.woff2') format('woff2'),
+    url('../fonts/spacegrotesk-medium-webfont.woff') format('woff'),
+    url('../fonts/spacegrotesk-medium-webfont.svg#space_groteskmedium') format('svg');
+}
+
+@font-face {
+    font-family: 'space_grotesk';
+    font-weight: 100;
+    font-style: normal;
+
+    src: url('../fonts/spacegrotesk-light-webfont.eot');
+    src: url('../fonts/spacegrotesk-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/spacegrotesk-light-webfont.woff2') format('woff2'),
+    url('../fonts/spacegrotesk-light-webfont.woff') format('woff'),
+    url('../fonts/spacegrotesk-light-webfont.svg#space_grotesklight') format('svg');
+}
+
+@font-face {
+    font-family: 'space_grotesk';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('../fonts/spacegrotesk-bold-webfont.eot');
+    src: url('../fonts/spacegrotesk-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/spacegrotesk-bold-webfont.woff2') format('woff2'),
+    url('../fonts/spacegrotesk-bold-webfont.woff') format('woff'),
+    url('../fonts/spacegrotesk-bold-webfont.svg#space_groteskbold') format('svg');
+}

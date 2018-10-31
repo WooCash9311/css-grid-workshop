@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Total points
+   ========================================================================== */
+
+.c-total-points {
+    display: grid;
+
+    justify-content: end;
+    grid-template-columns: auto repeat(4, 20px);
+    grid-template-rows: 1fr 2fr;
+}
+
+.c-total-points__label {
+    z-index: 1;
+
+    font-size: 18px;
+
+    justify-self: end;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    align-self: end;
+}
+
+.c-total-points__number {
+    z-index: 1;
+
+    font-size: 48px;
+    font-weight: 500;
+
+    align-self: center;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    justify-self: end;
+}
+
+.c-total-points__decor {
+    display: block;
+
+    background-color: $color-gray;
+
+    grid-row: 1 / span 4;
+    grid-column: 2 / span 42;
+}
+
+.c-total-points__icon {
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
+    grid-column: 4;
+}
+
+.c-total-points__icon .o-icon {
+    @include helper--transition;
+}
+
+.c-total-points__icon:hover .o-icon {
+    transform: translateX(3px);
+}

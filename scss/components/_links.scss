@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+// Links
+.c-links-list {
+    margin: 0;
+    padding: 0 0 0 $size-gutter*1.5;
+
+    list-style: none;
+
+    counter-reset: li-counter;
+}
+
+.c-links-list__item {
+    counter-increment: li-counter;
+}
+
+.c-links-list__item + .c-links-list__item {
+    margin-top: 8px;
+}
+
+.c-links-list__item a {
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: 250ms ease-in-out;
+    text-decoration: none;
+
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+
+        color: $color-brand-2;
+    }
+}
+
+.c-links-list__item a:before {
+    display: inline-block;
+
+    width: 48px;
+    margin-right: .5em;
+
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1;
+
+    content: '0' counter(li-counter);
+}
+
+// Nav link
+.c-nav-link {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    color: $color-white;
+    background-color: $color-brand-2;
+
+    align-items: center;
+}
+
+.c-nav-link--prev {
+    left: 0;
+}
+
+.c-nav-link--prev .o-icon {
+    transform: rotate(180deg);
+}
+
+.c-nav-link--next {
+    right: 0;
+}
+
+.c-nav-link .c-label + .c-icon-wrapper,
+.c-nav-link .c-icon-wrapper + .c-label {
+    margin-left: 8px;
+}
+
+.c-nav-link .c-label,
+.c-nav-link .o-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.c-nav-link:before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+    transition: transform .7s cubic-bezier(.6,.05,.01,.99);
+    transform: scaleX(0);
+    transform-origin: right;
+
+    background-color: $color-brand-3;
+
+    backface-visibility: hidden;
+}
+
+.c-nav-link:hover:before {
+    transition: transform .7s cubic-bezier(.6, .05, .01, .99);
+    transform: scaleX(1);
+    transform-origin: left;
+}

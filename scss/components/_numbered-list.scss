@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Numbered list
+   ========================================================================== */
+
+.c-numbered-list {
+    list-style: decimal;
+}
+
+.c-numbered-list__item {
+    @include helper--transition;
+
+    color: $color-gray-3;
+}
+
+.c-numbered-list__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.c-numbered-list__item.is-active,
+.c-numbered-list__item:hover {
+    color: $color-brand-1;
+}
+
+.c-numbered-list__item__link {
+    position: relative;
+
+    display: flex;
+
+    height: 28px;
+
+    font-size: 18px;
+}
+
+.c-numbered-list__item.is-active .c-numbered-list__item__link:after {
+    position: absolute;
+    z-index: 1;
+    right: -14px;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 14px solid $color-gray;
+}

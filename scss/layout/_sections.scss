@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.l-sec {
+    padding-top: 65px;
+    padding-bottom: 120px;
+}
+
+.l-sec__header + .l-sec__content {
+    margin-top: 66px;
+}
+
+// Intro
+.l-sec--intro {
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+// Most popular
+.l-sec--most-popular {
+    position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+.l-sec--most-popular .l-sec__header {
+    padding-bottom: 100px;
+}
+
+.l-sec--most-popular .l-sec__content {
+    padding-bottom: 120px;
+
+    background-color: $color-white;
+}
+
+.l-sec--most-popular .l-sec__action {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+// Red
+.l-sec--red {
+    background-color: $color-brand-2;
+}
+
+// White
+.l-sec--light {
+    background-color: $color-white;
+}
+
+// No gutters
+.l-sec--no-gutters {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// Alt
+.l-sec--alt {
+    overflow: hidden;
+}
+
+// Bg
+.l-sec--bg {
+    background-image: url('./img/pic-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
