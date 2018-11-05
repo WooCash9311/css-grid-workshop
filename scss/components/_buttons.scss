@@ -2,6 +2,35 @@
    Buttons
    ========================================================================== */
 
+.c-btn {
+    @include helper--transition;
+
+    cursor: pointer;
+}
+
+.c-btn__label {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+// Primary
+.c-btn--primary {
+    width: $size-btn-primary-width;
+    height: $size-field-height;
+    padding: 10px 15px;
+
+    color: $color-white;
+    border: 2px solid transparent;
+    background-color: $color-brand-4;
+}
+
+.c-btn--primary:hover {
+    color: $color-brand-4;
+    border-color: $color-brand-4;
+    background: transparent;
+}
+
+// Next
 .c-btn--next {
     display: flex;
 
@@ -18,13 +47,27 @@
 .c-btn--next .o-icon--arrow {
     @include helper--transition;
 
-    width: 1.37em;
-
-    font-size: 27px;
-
     color: $color-white;
 }
 
 .c-btn--next:hover .o-icon--arrow {
     transform: translateX(10px);
+}
+
+@include media('<=tablet') {
+    .c-btn--next {
+        width: $size-btn-next-width-tablet;
+        height: $size-btn-next-height-tablet;
+        padding-bottom: 40px;
+        padding-left: 80px;
+    }
+}
+
+@include media('<=phone') {
+    .c-btn--primary {
+        width: 100%;
+    }
+    .c-btn--next {
+        display: none;
+    }
 }

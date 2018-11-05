@@ -3,19 +3,19 @@
    ========================================================================== */
 
 .c-intro {
-    @include helper--box-shadow;
-
     position: relative;
 
-    display: grid;
-
     margin-top: -80px;
+}
+
+.c-intro__main {
+    @include helper--box-shadow;
+
     padding: 40px;
 
     background-color: $color-white;
-
-    grid-template-columns: repeat(6, 1fr);
 }
+
 
 .c-intro__header {
     margin: 0;
@@ -24,14 +24,7 @@
     font-size: 26px;
     font-weight: 500;
 
-    grid-column: 1 / 5;
-}
-
-.c-intro__main {
-    position: relative;
-
-    grid-column: 1 / 4;
-    grid-row-start: 2;
+    grid-row: 1;
 }
 
 .c-intro__header > .c-mark {
@@ -40,10 +33,12 @@
     color: $color-brand-4;
 }
 
-.c-intro__main__info {
-    position: absolute;
-    right: 0;
-    bottom: 100px;
+.c-intro__desc {
+    position: relative;
+}
+
+.c-intro__desc__info {
+    padding-top: 25px;
 
     font-size: 39px;
     font-weight: 500;
@@ -52,7 +47,27 @@
 }
 
 .c-intro__more {
-    position: absolute;
-    top: 35px;
-    right: 30px;
+    padding: 35px 30px 0 0;
+}
+
+@include media('<=tablet') {
+    .c-intro__main {
+        padding: 25px;
+    }
+
+    .c-intro__more {
+        padding-right: 0;
+    }
+    .c-intro__desc__media > img {
+        margin: 0 auto;
+    }
+}
+
+@include media('<=phone') {
+    .c-intro__desc__info p > br {
+        display: none;
+    }
+    .c-intro__desc__info {
+        font-size: 26px;
+    }
 }

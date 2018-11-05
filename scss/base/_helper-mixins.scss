@@ -48,11 +48,17 @@
     }
 }
 
-// Heading
+// Headings
 @mixin heading-1() {
     font-size: 39px;
     font-weight: 500;
     line-height: 1.2;
+    @include media('<=tablet') {
+        font-size: 36px;
+    }
+    @include media('<=phone') {
+        font-size: 30px;
+    }
 }
 
 @mixin heading-2() {
@@ -60,6 +66,12 @@
     font-weight: 500;
     line-height: 1.2;
     color: $color-white;
+    @include media('<=tablet') {
+        font-size: 36px;
+    }
+    @include media('<=phone') {
+        font-size: 30px;
+    }
 }
 
 
@@ -67,6 +79,12 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 1.2;
+    @include media('<=tablet') {
+        font-size: 30px;
+    }
+    @include media('<=phone') {
+        font-size: 28px;
+    }
 }
 
 @mixin heading-4() {
@@ -75,4 +93,17 @@
     line-height: 1.2;
 
     color: $color-white;
+    @include media('<=tablet') {
+        font-size: 30px;
+    }
+    @include media('<=phone') {
+        font-size: 28px;
+    }
+}
+
+// Texts
+@mixin text-1() {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
 }

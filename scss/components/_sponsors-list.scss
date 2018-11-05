@@ -4,13 +4,8 @@
 
 .c-sponsors-list {
     @include helper--list;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
 }
 
-.c-sponsors-list__item {
-    align-self: center;
-    justify-self: center;
+
+@include media('<=phone') {
 }

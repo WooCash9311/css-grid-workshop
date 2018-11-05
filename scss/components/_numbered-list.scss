@@ -13,7 +13,7 @@
 }
 
 .c-numbered-list__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .c-numbered-list__item.is-active,
@@ -29,6 +29,8 @@
     height: 28px;
 
     font-size: 18px;
+
+    align-items: center;
 }
 
 .c-numbered-list__item.is-active .c-numbered-list__item__link:after {

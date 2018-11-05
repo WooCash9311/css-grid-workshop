@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Form
+   ========================================================================== */
+
+.f-form__field {
+    select {
+        cursor: pointer;
+
+        -webkit-appearance: none;
+           -moz-appearance: none;
+    }
+}
+
+.f-form__field__inner {
+    position: relative;
+
+    background-color: $color-white;
+}
+
+.f-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1875;
+
+    color: $color-white;
+}
+
+.f-control {
+    width: 100%;
+    height: $size-field-height;
+    padding: 5px 15px;
+
+    color: $color-gray-3;
+    border: 1px solid $color-white;
+    border-radius: 0;
+}
+
+
+.f-form__field--select .f-control {
+    position: relative;
+    z-index: 1;
+
+    padding-right: 55px;
+
+    background: none;
+}
+
+.f-form__field--textarea .f-control {
+    height: $size-field-textarea-height;
+    padding-top: 15px;
+}
+
+.f-arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    transform: translateY(-50%);
+}
+
+@include media('<=phone') {
+}

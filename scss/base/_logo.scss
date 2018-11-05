@@ -17,11 +17,32 @@
     align-items: center;
 }
 
-.o-logo {
-    width: 1em;
-    height: 1em;
+.o-logo-wrapper .c-label {
+    position: absolute;
 
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+}
+
+.o-logo {
     font-size: $size-logo;
 
-    fill: $color-white;
+    color: $color-white;
+}
+
+@include media('<=phone') {
+    .o-logo-wrapper {
+        width: $size-logo-wrapper-phone;
+        height: $size-logo-wrapper-phone;
+    }
+    .o-logo {
+        font-size: $size-logo-phone;
+    }
 }

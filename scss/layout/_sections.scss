@@ -66,5 +66,44 @@
 .l-sec--bg {
     background-image: url('./img/pic-bg.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position-x: 50%;
+    background-size: cover;
+}
+
+// Form
+.l-sec--form .l-inner {
+    max-width: $size-sec-form-inner;
+}
+
+.l-sec--form .l-sec__header + .l-sec__content {
+    margin-top: 35px;
+}
+
+@include media('<=tablet') {
+    .l-sec {
+        padding-bottom: 100px;
+    }
+    .l-sec--intro {
+        padding-bottom: 40px;
+    }
+    .l-sec--no-gutters,
+    .l-sec--most-popular {
+        padding-bottom: 0;
+    }
+    .l-sec__header + .l-sec__content {
+        margin-top: 40px;
+    }
+}
+
+@include media('<=phone') {
+    .l-sec--form .l-sec__header br {
+        display: none;
+    }
+
+    .l-sec--most-popular .l-sec__content {
+        padding-bottom: 100px;
+    }
+    .l-sec--no-gutters {
+        padding-bottom: 0;
+    }
 }
