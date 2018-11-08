@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "lightstarter",
   "author": "Pagepro <pagepro@pagepro.pl>",
+  "scripts": {
+    "start": "gulp"
+  },
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.24.7",
