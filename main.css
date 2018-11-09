@@ -522,6 +522,8 @@ blockquote {
   border: 0; }
 
 .o-logo {
+  width: 1em;
+  height: 1em;
   font-size: 64px;
   color: #fff; }
 
