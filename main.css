@@ -1408,6 +1408,76 @@ ol:not([class]) {
     grid-row: 2; } }
 
 /* ==========================================================================
+   Header
+   ========================================================================== */
+.c-header {
+  padding-top: 30px; }
+
+.c-header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo; }
+
+.c-header__main {
+  padding-left: 22px; }
+
+.c-header__title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1; }
+
+.c-header__subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3; }
+
+.l-example .c-header {
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 30px;
+  grid-column-gap: 10px;
+      grid-template-areas: 'logo main';
+  -ms-grid-columns: 100px 10px auto;
+  grid-template-columns: 100px auto; }
+
+.l-example .c-header__main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: main;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+          align-self: center; }
+
+.l-final-project .c-header {
+  padding-bottom: 120px; }
+
+.l-final-project .c-header__title {
+  font-size: 51px;
+  line-height: 1.15; }
+
+.l-final-project .c-header__subtitle {
+  font-size: 31px; }
+
+@media (max-width: 1024px) {
+  .c-header__main {
+    padding-left: 8px; }
+  .l-final-project .c-header__title {
+    font-size: 38px; }
+  .l-final-project .c-header__subtitle {
+    font-size: 21px; } }
+
+@media (max-width: 767px) {
+  .c-header {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .l-final-project .c-header__title,
+  .l-final-project .c-header__subtitle {
+    display: none; } }
+
+/* ==========================================================================
    Numbered list
    ========================================================================== */
 .c-numbered-list {
@@ -1496,9 +1566,7 @@ ol:not([class]) {
   margin: 0;
   margin-bottom: 45px;
   font-size: 26px;
-  font-weight: 500;
-  -ms-grid-row: 1;
-  grid-row: 1; }
+  font-weight: 500; }
 
 .c-intro__header > .c-mark {
   text-transform: uppercase;
@@ -1512,9 +1580,6 @@ ol:not([class]) {
   font-size: 39px;
   font-weight: 500;
   text-align: center; }
-
-.c-intro__more {
-  padding: 35px 30px 0 0; }
 
 @media (max-width: 1024px) {
   .c-intro__main {
@@ -1832,78 +1897,6 @@ body {
    ========================================================================== */
 .l-footer {
   padding: 30px 0; }
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-.l-header .l-inner {
-  display: -ms-grid;
-  display: grid;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  grid-column-gap: 10px;
-      grid-template-areas: 'logo main';
-  -ms-grid-columns: 100px 10px auto;
-  grid-template-columns: 100px auto; }
-
-.l-header__logo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: logo; }
-
-.l-header__main {
-  padding-left: 22px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: main;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-              -ms-grid-row-align: center;
-          align-self: center; }
-
-.l-header__title {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1; }
-
-.l-header__subtitle {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.3; }
-
-.l-final-project .l-header {
-  padding-bottom: 120px; }
-
-.l-final-project .l-header__title {
-  font-size: 51px;
-  line-height: 1.15; }
-
-.l-final-project .l-header__subtitle {
-  font-size: 31px; }
-
-@media (max-width: 1024px) {
-  .l-header__main {
-    padding-left: 8px; }
-  .l-final-project .l-header__title {
-    font-size: 38px; }
-  .l-final-project .l-header__subtitle {
-    font-size: 21px; } }
-
-@media (max-width: 767px) {
-  .l-header .l-inner {
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  .l-final-project .l-header .l-inner {
-    padding-bottom: 0; }
-  .l-final-project .l-header__title,
-  .l-final-project .l-header__subtitle {
-    display: none; }
-  .l-final-project .l-header__tools {
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center; } }
 
 /* ==========================================================================
    Inner
