@@ -9,11 +9,12 @@
   "devDependencies": {
     "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.24.7",
-    "gulp-flatten": "^0.3.1",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "5.0.0",
+    "gulp-flatten": "^0.3.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "1.5.2",
+    "gulp-wait": "0.0.2",
     "gulp-watch": "^4.3.8",
     "include-media": "^1.4.9",
     "jquery": "3.0.0",

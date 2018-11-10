@@ -1,8 +1,8 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 var autoprefixer = require('gulp-autoprefixer')
-var watch = require('gulp-watch')
 var flatten = require('gulp-flatten')
+var wait = require('gulp-wait')
 
 var browserSync = require('browser-sync').create()
 
@@ -18,6 +18,7 @@ gulp.task('watchapp', ['sass'], function() {
 
 gulp.task('sass', function () {   // definicja taska kompilującego sass
   return gulp.src('scss/**/*.scss') // wzorzec plików ktore mają być skompilowane (pliki z rozszerzeniem *.scss ze wszystkich podfolderów i folderu Content/app)
+        .pipe(wait(100))
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({ browsers: ['> 0%'], grid: true }))
         .pipe(flatten())
