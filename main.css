@@ -1335,6 +1335,7 @@ ol:not([class]) {
      -moz-transition-duration: 170ms;
        -o-transition-duration: 170ms;
           transition-duration: 170ms;
+  position: relative;
   z-index: 1; }
 
 .c-info-box:hover .c-info-box__desc {
@@ -1669,6 +1670,7 @@ ol:not([class]) {
   line-height: 1.19; }
 
 .c-points-box__decor {
+  display: block;
   background-color: #DD8686; }
 
 /* ==========================================================================
