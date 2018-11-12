@@ -3,8 +3,6 @@
 ## Requirements
 1. [node](https://nodejs.org/en/) & [npm](https://docs.npmjs.com/cli/install) or [yarn](https://yarnpkg.com/lang/en/docs/install).
 2. SASS
-3. **gulp-cli** node package installed globally:
-`npm install -g gulp-cli`
 
 ## [Installation](docs/install.md)
 

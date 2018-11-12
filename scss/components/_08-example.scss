@@ -1,0 +1,25 @@
+/* ==========================================================================
+   8. IE11 Implementation
+   ========================================================================== */
+
+.example-08 {
+    .c-wrapper-box {
+        display: grid;
+
+        grid-gap: 20px;
+        grid-template-areas: 'box1 box1' 'box2 box3';
+        grid-template-columns: 1fr 1fr;
+
+        .c-box--one {
+            grid-area: box1;
+        }
+
+        .c-box--two {
+            grid-area: box2;
+        }
+
+        .c-box--three {
+            grid-area: box3;
+        }
+    }
+}

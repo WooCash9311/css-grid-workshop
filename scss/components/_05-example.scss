@@ -1,9 +1,30 @@
 /* ==========================================================================
-   5. Grid instead of Bootstrap
+   5. Grid Template Areas
    ========================================================================== */
 
 .example-05 {
     .c-wrapper-box {
         // Add code here
+
+        .l-header {
+        }
+
+        .l-article {
+        }
+
+        .l-aside {
+        }
+
+        .l-footer {
+        }
+
+        .l-copyright {
+        }
+    }
+
+    @include media('<=phone') {
+        .c-wrapper-box {
+            // Add code here
+        }
     }
 }

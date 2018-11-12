@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Final project
+   ========================================================================== */
+
+.l-final-project {
+    .c-header {
+        padding-bottom: 120px;
+    }
+
+    .c-header__title {
+        font-size: 51px;
+        line-height: 1.15;
+    }
+
+    .c-header__subtitle {
+        font-size: 31px;
+    }
+
+    .l-main {
+        min-height: auto;
+        padding: 0;
+    }
+
+    .l-main .l-inner {
+        padding-bottom: 0;
+    }
+}
+
+@include media('<=tablet') {
+    .l-final-project {
+        .c-header__title {
+            font-size: 38px;
+        }
+        .c-header__subtitle {
+            font-size: 21px;
+        }
+    }
+}
+
+@include media('<=phone') {
+    .l-final-project {
+        .c-header__title,
+        .c-header__subtitle {
+            display: none;
+        }
+    }
+}

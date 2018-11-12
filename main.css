@@ -1118,6 +1118,7 @@ ol:not([class]) {
    ========================================================================== */
 .f-form__field select {
   cursor: pointer;
+  appereance: none;
   -webkit-appearance: none;
   -moz-appearance: none; }
 
@@ -1454,31 +1455,14 @@ ol:not([class]) {
               -ms-grid-row-align: center;
           align-self: center; }
 
-.l-final-project .c-header {
-  padding-bottom: 120px; }
-
-.l-final-project .c-header__title {
-  font-size: 51px;
-  line-height: 1.15; }
-
-.l-final-project .c-header__subtitle {
-  font-size: 31px; }
-
 @media (max-width: 1024px) {
   .c-header__main {
-    padding-left: 8px; }
-  .l-final-project .c-header__title {
-    font-size: 38px; }
-  .l-final-project .c-header__subtitle {
-    font-size: 21px; } }
+    padding-left: 8px; } }
 
 @media (max-width: 767px) {
   .c-header {
     padding-top: 20px;
-    padding-bottom: 20px; }
-  .l-final-project .c-header__title,
-  .l-final-project .c-header__subtitle {
-    display: none; } }
+    padding-bottom: 20px; } }
 
 /* ==========================================================================
    Numbered list
@@ -1779,27 +1763,61 @@ ol:not([class]) {
   .c-total-points__label {
     font-size: 16px; } }
 
+/* ==========================================================================
+   Final project
+   ========================================================================== */
+.l-final-project .c-header {
+  padding-bottom: 120px; }
+
+.l-final-project .c-header__title {
+  font-size: 51px;
+  line-height: 1.15; }
+
+.l-final-project .c-header__subtitle {
+  font-size: 31px; }
+
+.l-final-project .l-main {
+  min-height: auto;
+  padding: 0; }
+
+.l-final-project .l-main .l-inner {
+  padding-bottom: 0; }
+
+@media (max-width: 1024px) {
+  .l-final-project .c-header__title {
+    font-size: 38px; }
+  .l-final-project .c-header__subtitle {
+    font-size: 21px; } }
+
+@media (max-width: 767px) {
+  .l-final-project .c-header__title,
+  .l-final-project .c-header__subtitle {
+    display: none; } }
+
 /* Components - examples
    ========================================================================== */
 /* ==========================================================================
    1. Introduce to Grid
    ========================================================================== */
 /* ==========================================================================
-   2. Grid cell placement
+   2. Functions
    ========================================================================== */
 /* ==========================================================================
-   3. Line name based placement
+   3. Grid cell placement
    ========================================================================== */
 /* ==========================================================================
-   4. Grid Template Areas
+   4. Line name based placement
    ========================================================================== */
 /* ==========================================================================
-   5. Grid instead of Bootstrap
+   5. Grid Template Areas
    ========================================================================== */
 /* ==========================================================================
-   6. Align and justify
+   6. Grid instead of Bootstrap
    ========================================================================== */
-.example-06 .c-wrapper-box {
+/* ==========================================================================
+   7. Align and justify
+   ========================================================================== */
+.example-07 .c-wrapper-box {
   display: -ms-grid;
   display: grid;
   height: 80vh;
@@ -1807,25 +1825,50 @@ ol:not([class]) {
       grid-template-columns: 150px 150px 150px;
   grid-auto-rows: 100px;
   grid-gap: 20px; }
-  .example-06 .c-wrapper-box .c-box--one {
+  .example-07 .c-wrapper-box .c-box--one {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1 / 3; }
-  .example-06 .c-wrapper-box .c-box--two {
+  .example-07 .c-wrapper-box .c-box--two {
     -ms-grid-column: 3;
     grid-column: 3;
     -ms-grid-row: 1;
     grid-row: 1; }
-  .example-06 .c-wrapper-box .c-box--four {
+  .example-07 .c-wrapper-box .c-box--four {
     background-color: #B9141F;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     grid-row: 2 / 4; }
+
+/* ==========================================================================
+   8. IE11 Implementation
+   ========================================================================== */
+.example-08 .c-wrapper-box {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-rows: auto 20px auto;
+      grid-template-areas: 'box1 box1' 'box2 box3';
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr; }
+  .example-08 .c-wrapper-box .c-box--one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: box1; }
+  .example-08 .c-wrapper-box .c-box--two {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: box2; }
+  .example-08 .c-wrapper-box .c-box--three {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: box3; }
 
 /* Layouts and main layout elements
    ========================================================================== */
@@ -1842,7 +1885,7 @@ body {
   border: 2px dashed rgba(21, 21, 21, 0.2);
   background-color: rgba(255, 255, 255, 0.4); }
 
-.example-04 .c-wrapper-box > * {
+.example-05 .c-wrapper-box > * {
   padding: 30px;
   font-size: 18px;
   font-weight: 500;
@@ -1851,36 +1894,36 @@ body {
           border-radius: 20px;
   background: #E34A4A; }
 
-.example-05 .l-header {
+.example-06 .l-header {
   padding: 1em;
   border-bottom: 1px dotted #999;
   background-color: #fff; }
 
-.example-05 .l-aside {
+.example-06 .l-aside {
   padding: 1em;
   color: #fff;
   background-color: rgba(21, 21, 21, 0.7); }
-  .example-05 .l-aside a:not([class]) {
+  .example-06 .l-aside a:not([class]) {
     -webkit-transition: 250ms ease-in-out;
     -o-transition: 250ms ease-in-out;
     -moz-transition: 250ms ease-in-out;
     transition: 250ms ease-in-out;
     color: currentColor; }
-  .example-05 .l-aside a:not([class]):hover {
+  .example-06 .l-aside a:not([class]):hover {
     text-decoration: none;
     color: #E34A4A; }
-  .example-05 .l-aside ol {
+  .example-06 .l-aside ol {
     margin: 0;
     padding: 0 0 0 10px;
     list-style: none;
     counter-reset: li-counter; }
-  .example-05 .l-aside li {
+  .example-06 .l-aside li {
     counter-increment: li-counter; }
-  .example-05 .l-aside li a {
+  .example-06 .l-aside li a {
     position: relative;
     display: block;
     padding-left: 30px; }
-  .example-05 .l-aside li a:before {
+  .example-06 .l-aside li a:before {
     position: absolute;
     top: 2px;
     left: 0;
@@ -1889,10 +1932,10 @@ body {
     font-weight: 700;
     line-height: 1;
     content: "0" counter(li-counter); }
-  .example-05 .l-aside li:nth-child(n + 10) a:before {
+  .example-06 .l-aside li:nth-child(n + 10) a:before {
     content: counter(li-counter); }
 
-.example-05 .l-footer {
+.example-06 .l-footer {
   background-color: #E34A4A;
   padding: 1em; }
 
@@ -1941,13 +1984,6 @@ body {
   position: relative;
   min-height: 100%;
   padding-bottom: 160px; }
-
-.l-final-project .l-main {
-  min-height: auto;
-  padding: 0; }
-
-.l-final-project .l-main .l-inner {
-  padding-bottom: 0; }
 
 /* ==========================================================================
    Sections
