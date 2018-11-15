@@ -31,6 +31,7 @@
 @import "components/links";
 @import "components/info-box";
 @import "components/header";
+@import "components/hints";
 @import "components/numbered-list";
 @import "components/most-popular-list";
 @import "components/vertical-list";
@@ -41,15 +42,18 @@
 @import "components/sponsors-list";
 @import "components/tabs";
 @import "components/total-points";
+@import "components/final-project";
 
 /* Components - examples
    ========================================================================== */
 @import "components/01-example"; // Introduce to Grid
-@import "components/02-example"; // Grid cell placement
-@import "components/03-example"; // Line name based placement
-@import "components/04-example"; // Grid Template Areas
-@import "components/05-example"; // Grid instead of Bootstrap
-@import "components/06-example"; // Align and justify
+@import "components/02-example"; // Functions
+@import "components/03-example"; // Grid cell placement
+@import "components/04-example"; // Line name based placement
+@import "components/05-example"; // Grid Template Areas
+@import "components/06-example"; // Grid instead of Bootstrap
+@import "components/07-example"; // Align and justify
+@import "components/08-example"; // IE11 Implementation
 
 /* Layouts and main layout elements
    ========================================================================== */

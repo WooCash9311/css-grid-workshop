@@ -46,29 +46,9 @@
     align-self: center;
 }
 
-// Final project
-.l-final-project .c-header {
-    padding-bottom: 120px;
-}
-
-.l-final-project .c-header__title {
-    font-size: 51px;
-    line-height: 1.15;
-}
-
-.l-final-project .c-header__subtitle {
-    font-size: 31px;
-}
-
 @include media('<=tablet') {
     .c-header__main {
         padding-left: 8px;
-    }
-    .l-final-project .c-header__title {
-        font-size: 38px;
-    }
-    .l-final-project .c-header__subtitle {
-        font-size: 21px;
     }
 }
 
@@ -76,9 +56,5 @@
     .c-header {
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    .l-final-project .c-header__title,
-    .l-final-project .c-header__subtitle {
-        display: none;
     }
 }

@@ -36,35 +36,37 @@
                             CSS Grid Workshops
                         </h1>
                         <p class="c-header__subtitle">
-                            <strong>05</strong> Grid Template Areas
+                            <strong>07</strong> Align and justify
                         </p>
                     </div>
                 </div>
             </div>
         </header>
-        <main class="l-main example-05">
+        <main class="l-main example-07">
             <div class="l-inner">
-                <div class="c-wrapper-box">
-                    <div class="l-header">Header</div>
-                    <article class="l-article">
-                        <h2>Article</h2>
-                        <p>Content for my excellent article would go here.</p>
-                    </article>
-                    <aside class="l-aside">Aside</aside>
-                    <div class="l-footer">Footer</div>
-                    <div class="l-copyright">Copyright</div>
+                <div class="l-wrapper">
+                    <div class="c-wrapper-box">
+                        <div class="c-box c-box--one">One</div>
+                        <div class="c-box c-box--two">Two</div>
+                        <div class="c-box c-box--three">Three</div>
+                        <div class="c-box c-box--four">Four</div>
+                        <div class="c-box c-box--five">Five</div>
+                        <div class="c-box c-box--six">Six</div>
+                        <div class="c-box c-box--seven">Seven</div>
+                        <div class="c-box c-box--eight">Eight</div>
+                    </div>
                 </div>
-                <a href="04-example.html" class="c-nav-link c-nav-link--prev">
+                <a href="06-example.html" class="c-nav-link c-nav-link--prev">
                     <span class="c-icon-wrapper">
                         <svg class="o-icon o-icon--arrow" x="0px" y="0px"
                             viewBox="-28.6 36.1 38.9 28.9" xml:space="preserve">
                             <polygon points="-4.3,36.1 -5.7,37.5 6.2,49 -28.6,49 -28.6,51 6.7,51 -5.7,63.6 -4.3,65 10.3,50.2 "/>
                         </svg>
                     </span>
-                    <span class="c-label">Line name based placement</span>
-                </a>
-                <a href="06-example.html" class="c-nav-link c-nav-link--next">
                     <span class="c-label">Grid instead of Bootstrap</span>
+                </a>
+                <a href="08-example.html" class="c-nav-link c-nav-link--next">
+                    <span class="c-label">IE11 Implementation</span>
                     <span class="c-icon-wrapper">
                         <svg class="o-icon o-icon--arrow" x="0px" y="0px"
                             viewBox="-28.6 36.1 38.9 28.9" xml:space="preserve">
@@ -183,6 +185,136 @@
                                                         ‘area-name .’
                                                         ‘. area-name’;
                             </code>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Parent styles:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item c-hints-list__item--title">
+                            <code>justify-content:</code>
+                            <ul class="c-hints-list">
+                                <li class="c-hints-list__item">
+                                    <code>center</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>end</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>start</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>stretch</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>space-around</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>space-between</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>space-evenly</code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="c-hints-list__item c-hints-list__item--title">
+                            <code>align-content:</code>
+                            <ul class="c-hints-list">
+                                <li class="c-hints-list__item">
+                                    <code>center</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>end</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>start</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>stretch</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>space-around</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>space-between</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>space-evenly</code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="c-hints-list__item c-hints-list__item--title">
+                            <code>justify-items:</code>
+                            <ul class="c-hints-list">
+                                <li class="c-hints-list__item">
+                                    <code>center</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>end</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>start</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>stretch</code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="c-hints-list__item c-hints-list__item--title">
+                            <code>align-items:</code>
+                            <ul class="c-hints-list">
+                                <li class="c-hints-list__item">
+                                    <code>center</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>end</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>start</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>stretch</code>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Child styles:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item c-hints-list__item--title">
+                            <code>justify-self:</code>
+                            <ul class="c-hints-list">
+                                <li class="c-hints-list__item">
+                                    <code>center</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>end</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>start</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>stretch</code>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="c-hints-list__item c-hints-list__item--title">
+                            <code>align-self:</code>
+                            <ul class="c-hints-list">
+                                <li class="c-hints-list__item">
+                                    <code>center</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>end</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>start</code>
+                                </li>
+                                <li class="c-hints-list__item">
+                                    <code>stretch</code>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
