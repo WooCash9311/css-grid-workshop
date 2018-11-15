@@ -2,12 +2,17 @@
    Box
    ========================================================================== */
 
+.c-wrapper-box {
+    color: $color-white;
+}
+
 .c-box {
     padding: 30px;
 
     font-size: 18px;
     font-weight: 500;
 
+    color: $color-white;
     border-radius: 20px;
     background: $color-brand-2;
 }

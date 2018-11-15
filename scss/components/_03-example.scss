@@ -5,5 +5,10 @@
 .example-03 {
     .c-wrapper-box {
         // Add code here
+        .c-box--one {}
+        .c-box:nth-child(odd) {}
+        .c-box--two {}
+        .c-box--five {}
+        .c-box--seven {}
     }
 }

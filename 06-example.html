@@ -92,11 +92,125 @@
                     </span>
                 </a>
             </div>
+            <div class="c-hints">
+                <div class="c-hints__toggler">
+                    <p class="c-hints__title">
+                        Hints
+                    </p>
+                </div>
+                <div class="c-hints__content">
+                    <p class="c-hints__list-title">
+                        Creating grid:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item">
+                            <code>display: grid;</code>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Grid gap:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item">
+                            <code>grid-gap: gap-size;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-column-gap: column-gap-size;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-row-gap: row-gap-size;</code>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Creating rows and columns:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item">
+                            <code>grid-template-columns: track-size;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template-rows: track-size;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template: grid-template-rows/grid-template-columns;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template-columns: [line-name] line-size [line-name]...;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template-rows: [line-name] line-size [line-name]...;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-auto-columns: tracks-size;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-auto-rows: tracks-size;</code>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Functions:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item">
+                            <code>grid-template-columns: repeat(how-many, size);</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template-columns: repeat(how-many, minmax(min-value, max-value));</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template-columns: repeat(auto-fill, minmax(min-value, max-value));</code>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Cell placement:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item">
+                            <code>grid-column-start: column-line-number | [line-name];</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-column-end: column-line-number | [line-name];</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-column: grid-column-start/grid-column-end | [line-name]/[line-name];</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-row-start: row-line-number | [line-name];</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-row-end: row-line-number | [line-name];</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-row: grid-row-start/grid-row-end | [line-name]/[line-name];</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-auto-flow: row | column | dense;</code>
+                        </li>
+                    </ul>
+                    <p class="c-hints__list-title">
+                        Areas:
+                    </p>
+                    <ul class="c-hints-list">
+                        <li class="c-hints-list__item">
+                            <code>grid-area: area-name;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-area: row-start/column-start/row-end/column-end;</code>
+                        </li>
+                        <li class="c-hints-list__item">
+                            <code>grid-template-areas: ‘area-name area-name’
+                                                        ‘area-name .’
+                                                        ‘. area-name’;
+                            </code>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </main>
         <footer class="l-footer">
             <div class="l-inner">
                 <p class="c-copyright">
-                    Designed and developed by PagePro
+                    Designed and developed by <a href="https://pagepro.co/" target="_blank">PagePro</a>
                 </p>
             </div>
         </footer>
