@@ -14,8 +14,8 @@ gulp.task('watchapp', ['sass'], function () {
     server: './'
   })
 
-  watch('scss/**/*.scss', ['sass']).on('change', browserSync.reload)
-  watch('./*.html').on('change', browserSync.reload)
+  gulp.watch('scss/**/*.scss', ['sass']).on('change', browserSync.reload)
+  gulp.watch('./*.html').on('change', browserSync.reload)
 })
 
 gulp.task('sass', function () {   // definicja taska kompilującego sass
