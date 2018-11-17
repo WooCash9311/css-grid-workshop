@@ -4,26 +4,55 @@
 
 .example-05 {
     .c-wrapper-box {
-        // Add code here
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
 
-        .l-header {}
+        grid-template-areas: 'header header header header'
+                             'aside article article article'
+                             'aside form form contact-section'
+                             'footer footer footer footer'
+                              '. copyright copyright .';
 
-        .l-article {}
+        .l-header {
+            grid-area: header;
+        }
 
-        .l-form {}
+        .l-article {
+            grid-area: article;
+        }
 
-        .l-contact-section {}
+        .l-form {
+            grid-area: form;
+        }
 
-        .l-aside {}
+        .l-contact-section {
+            grid-area: contact-section;
+        }
 
-        .l-footer {}
+        .l-aside {
+            grid-area: aside;
+        }
 
-        .l-copyright {}
+        .l-footer {
+            grid-area: footer;
+        }
+
+        .l-copyright {
+            grid-area: copyright;
+        }
     }
 
     @include media('<=phone') {
         .c-wrapper-box {
-            // Add code here
+            grid-template-columns: 1fr;
+            grid-template-areas: 'header'
+                             'aside'
+                             'article'
+                             'form'
+                             'contact-section'
+                             'footer'
+                             'copyright';
         }
     }
 }
