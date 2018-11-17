@@ -4,14 +4,47 @@
 
 .example-06 {
     .c-wrapper-box {
-        // Add code here
+        color: black;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px;
 
-        .l-header {}
+        .l-header {
+            grid-column: 1 / -1;
+        }
 
-        .l-aside {}
+        .l-aside {
+            grid-column: 1 / 4;
+        }
 
-        .l-content {}
+        .l-content {
+            grid-column: 4 / -1;
+        }
 
-        .l-footer {}
+        .l-footer {
+            grid-column: 1 / -1;
+        }
+    }
+
+    @include media('<=phone') {
+        .c-wrapper-box {
+            grid-template-columns: 1fr;
+
+            .l-header {
+                grid-column: 1 / -1;
+            }
+    
+            .l-aside {
+                grid-column: 1 / -1;
+            }
+    
+            .l-content {
+                grid-column: 1 / -1;
+            }
+    
+            .l-footer {
+                grid-column: 1 / -1;
+            }
+        }
     }
 }
