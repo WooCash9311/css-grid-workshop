@@ -4,11 +4,20 @@
 
 .example-03 {
     .c-wrapper-box {
-        // Add code here
-        .c-box--one {}
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-template-rows: 4;
+        grid-gap: 20px;
         .c-box:nth-child(odd) {}
-        .c-box--two {}
-        .c-box--five {}
-        .c-box--seven {}
+        .c-box--five {
+            grid-row: 1 / 3;
+        }
+        .c-box--six {
+            grid-row: 2 / 5;
+            grid-column-start: 3;
+        }
+        .c-box--eight {
+            grid-column: span 2;
+        }
     }
 }
