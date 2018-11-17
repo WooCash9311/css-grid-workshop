@@ -8,7 +8,10 @@
         grid-template-columns: repeat(4, minmax(200px, 1fr));
         grid-template-rows: 4;
         grid-gap: 20px;
-        .c-box:nth-child(odd) {}
+        grid-auto-rows: 100px;
+        .c-box:nth-child(odd) {
+            //test
+        }
         .c-box--five {
             grid-row: 1 / 3;
         }
