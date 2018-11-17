@@ -4,6 +4,8 @@
 
 .example-02 {
     .c-wrapper-box {
-        // Add code here
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
 }
